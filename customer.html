@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Customer service</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.nets/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-0 nav" style="font-size: 14px;">
+        <nav class="navbar navbar-expand-lg bg-con">
+            <div class="text-white">
+                <img src="images/amazon_PNG11.png" alt="Logo" class="align-top"
+                    style="height: 50px; width: 110px; position: relative;">
+            </div>
+            <div>
+                <a class="nav-item nav-link text-white logo" style="font-weight:bold;">Deliver Pakistan</a>
+            </div>
+            <div class="input-group px-2 col-md-5">
+                <div class="input-group-prepend">
+                    <select class="custom-select" id="categorySelect">
+                        <option selected>All</option>
+                        <option value="1">Books</option>
+                        <option value="2">Electronics</option>
+                        <option value="3">Clothing</option>
+                    </select>
+                </div>
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-warning" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-0" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown px-2 text-white" style="font-weight:bold;">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">ENG</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Urdu</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">More Languages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown text-white px-2" style="font-weight:bold;">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">Hello, Bisma account & lists</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link px-2 text-white" style="font-weight:bold;" href=".html">Returns &
+                            Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link px-2 text-white" style="font-weight:bold;" href=".html">
+                            <i class="fas fa-shopping-cart cart"></i> Cart
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid p-0 bg-dark" style="font-size: 15px;">
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span> All
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Today's Deal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Buy Again</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Customer Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Registry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Gift Cards</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid p-0 customer" style="font-size: 15px;">
+        <nav class="navbar navbar-expand-lg customer text-white">
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href="#">customer Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href="#"><span class="t">Sell</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section class="container-fluid p-0 customerpara text-white h-100 pt-4">
+        <div class="container-fluid p-0 customerpara text-white pt-5 px-3">
+            <h2>Welcome to Amazon Customer Service, Bisma</h2>
+            <h5 class="pt-2">What would you like help with today? You can quickly take care of most things here, or
+                connect with us when needed.</h5>
+        </div>
+        <div class="container mt-4 px-0 pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                                    <img src="images/istockphoto-638722958-2048x2048.jpg" class="card-img align-items-center" alt="Image 1">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-text pt-3">A delivery, order or return</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                                    <img src="images/ChatGPT-Logo-PNG-Pic.png" class="card-img align-items-center py-3" style="width:80%; height:80%; padding-left:10%;" alt="Image 2">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-text pt-3">International shopping</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                                    <img src="images/de-la-junta-de-andalucia5052.logowik.com.webp" class="card-img align-items-center py-2" style="padding-left:10%;" alt="Image 3">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-text pt-3">Payment, Charges or Gifts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-3">
+                                <img src="images/images.png" class="card-img align-items-center py-2" style="width:80%; height:80%;" alt="Image 4">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <p class="card-text pt-3">Login, address, Privacy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                                    <img src="images/de-la-junta-de-andalucia5052.logowik.com.webp" class="card-img align-items-center py-2" style="padding-left:10%;" alt="Image 3">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-text pt-3">Kindle, Fire or Alexa device</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                                    <img src="images/istockphoto-638722958-170667a.webp" class="card-img align-items-center" alt="Image 5">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-text pt-3">eBooks, Prime videos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                                    <img src="images/istockphoto-638722958-2048x2048.jpg" class="card-img align-items-center" alt="Image 6">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-text pt-3">A delivery, order or return</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                                    <img src="images/ChatGPT-Logo-PNG-Pic.png" class="card-img align-items-center py-3" style="width:80%; height:80%; padding-left:10%;" alt="Image 2">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-text pt-3">International shopping</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-3">
+                                    <img src="images/de-la-junta-de-andalucia5052.logowik.com.webp" class="card-img align-items-center py-2" style="padding-left:10%;" alt="Image 3">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-text pt-3">Payment, Charges or Gifts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container-fluid px-3 mb-5">
+        <h4 class="pt-5">Search our help library</h4>
+    
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container px-3 mb-5">
+        <h4 class="pt-3">All Help Topics</h4>
+        <div class="row">
+            <div class="col-md-3 font-weight-bold mb-3">
+                <button class="py-2 px-4 customerpara text-white font-weight-bold mb-3">Recommended Topics</button>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action"><a href="#">Where's my Stuff</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="#">Shipping and Delivery</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="#">Returns And Refunds</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="#">Managing Your Account</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="#">Payment, Prices and Promotions</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="#">Devices and Digital Solutions</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="#">Other Topics & Help Sites</a></li>
+                    <li class="list-group-item list-group-item-action"><a href="#">Shipping and Delivery</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="card card2">
+                                <div class="card-body px-2">
+                                    <h6 class="card-title">Track Your Package</h6>
+                                    <p class="card-text">What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Duplicate Cards -->
+                    <div class="col-md-8 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="card card2">
+                                <div class="card-body px-2">
+                                    <h6 class="card-title">Track Your Package</h6>
+                                    <p class="card-text">What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="card card2">
+                                <div class="card-body px-2">
+                                    <h6 class="card-title">Track Your Package</h6>
+                                    <p class="card-text">What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="card card2">
+                                <div class="card-body px-2">
+                                    <h6 class="card-title">Track Your Package</h6>
+                                    <p class="card-text">What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="card card2">
+                                <div class="card-body px-2">
+                                    <h6 class="card-title">Track Your Package</h6>
+                                    <p class="card-text">What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="card card2">
+                                <div class="card-body px-2">
+                                    <h6 class="card-title">Track Your Package</h6>
+                                    <p class="card-text">What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="card card2">
+                                <div class="card-body px-2">
+                                    <h6 class="card-title">Track Your Package</h6>
+                                    <p class="card-text">What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="card card2">
+                                <div class="card-body px-2">
+                                    <h6 class="card-title">Track Your Package</h6>
+                                    <p class="card-text">What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Duplicate Cards -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer >
+        <button id="backToTop" style="width: 100%; background-color: black;" class=" py-2 text-white ">Back to
+            Top</button>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script>
+            $('#backToTop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+
+        </script>
+        <div class="  bg-dark text-white" style="font-size: 13px;">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5>Get to Know Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">About Us</a></li>
+                            <li><a href="#" class="text-white">Careers</a></li>
+                            <li><a href="#" class="text-white">Press Releases</a></li>
+                            <li><a href="#" class="text-white">Amazon Cares</a></li>
+                            <li><a href="#" class="text-white">Careers</a></li>
+                            <li><a href="#" class="text-white">Press Releases</a></li>
+                            <li><a href="#" class="text-white">Amazon Cares</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5>Connect with Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Facebook</a></li>
+                            <li><a href="#" class="text-white">Twitter</a></li>
+                            <li><a href="#" class="text-white">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5>Make Money with Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Sell on Amazon</a></li>
+                            <li><a href="#" class="text-white">Sell Under Amazon Accelerator</a></li>
+                            <li><a href="#" class="text-white">Become an Affiliate</a></li>
+                            <li><a href="#" class="text-white">Advertise Your Products</a></li>
+                            <li><a href="#" class="text-white">Advertise Your Products</a></li>
+                            <li><a href="#" class="text-white">Sell on Amazon</a></li>
+                            <li><a href="#" class="text-white">Sell Under Amazon Accelerator</a></li>
+                            <li><a href="#" class="text-white">Become an Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5>Let Us Help You</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">COVID-19 and Amazon</a></li>
+                            <li><a href="#" class="text-white">Your Account</a></li>
+                            <li><a href="#" class="text-white">Returns Centre</a></li>
+                            <li><a href="#" class="text-white">100% Purchase Protection</a></li>
+                            <li><a href="#" class="text-white">Your Account</a></li>
+                            <li><a href="#" class="text-white">Returns Centre</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-light">English</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-light">USD - U.S. Dollar</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-light">United States</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container py-4 footer-links">
+                <div class="row d-none d-sm-block">
+                    <div class="col-12 text-center">
+                        <a href="#">Amazon Music</a>
+                        <a href="#">Amazon Advertising</a>
+                        <a href="#">Amazon Drive</a>
+                        <a href="#">6pm</a>
+                        <a href="#">AbeBooks</a>
+                        <a href="#">ACX</a>
+                        <a href="#">Alexa</a>
+                        <a href="#">Sell on Amazon</a>
+                        <a href="#">Sell Under Amazon Accelerator</a>
+                        <a href="#">Become an Affiliate</a>
+                        <a href="#">Advertise Your Products</a>
+                        <a href="#">Amazon Web Services</a>
+                        <a href="#">Audible</a>
+                        <a href="#">Book Depository</a>
+                        <a href="#">Box Office Mojo</a>
+                        <a href="#">ComiXology</a>
+                        <a href="#">DPReview</a>
+                        <a href="#">Fabric</a>
+                        <a href="#">Goodreads</a>
+                        <a href="#">IMDb</a>
+                        <a href="#">IMDbPro</a>
+                        <a href="#">Kindle Direct Publishing</a>
+                        <a href="#">Prime Video Direct</a>
+                        <a href="#">Shopbop</a>
+                        <a href="#">Woot!</a>
+                        <a href="#">Zappos</a>
+                        <a href="#">Ring</a>
+                        <a href="#">eero WiFi</a>
+                        <a href="#">Blink</a>
+                        <a href="#">Neighbors App</a>
+                        <a href="#">Amazon Subscription Boxes</a>
+                        <a href="#">PillPack</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark text-center py-3">
+                <p class="mb-0">© 2024 Your Company. All Rights Reserved.</p>
+            </div>
+            <div></div>
+        </footer>
+</body>
+
+</html>

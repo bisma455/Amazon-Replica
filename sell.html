@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sell</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.nets/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-0 nav" style="font-size: 14px;">
+        <nav class="navbar navbar-expand-lg bg-con">
+            <div class="text-white pt-3">
+                <img src="images/amazon_PNG11.png" alt="Logo" class="align-top"
+                    style="height: 50px; width: 110px; position: relative;">
+            </div>
+            <div>
+                <a class="nav-item nav-link text-white logo" style="font-weight:bold;">Deliver Pakistan</a>
+            </div>
+            <div class="input-group px-2 col-md-5">
+                <div class="input-group-prepend">
+                    <select class="custom-select" id="categorySelect">
+                        <option selected>All</option>
+                        <option value="1">Books</option>
+                        <option value="2">Electronics</option>
+                        <option value="3">Clothing</option>
+                    </select>
+                </div>
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-warning" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-2 text-white" style="font-weight:bold ;" href="#"
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    ENG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-2 text-white" style="font-weight:bold ;" href="#"
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                   Hello,Bisma Accounts $Lists
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-2 text-white" style="font-weight:bold ;" href="#"
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                  Return& Orders
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle px-2 text-white" style="font-weight:bold ;" href="#"
+                role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><i class="fas fa-shopping-cart cart"></i>
+             Cart
+            </a>
+                
+            </li>
+        </ul>
+              </div>
+</nav>
+    </div>
+    <div class="container-fluid  bg-dark" style="font-size: 13px;">
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span> All
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Today's Deal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Buy Again</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href="customer.html">Customer Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Registry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active text-white" href=".html">Gift Cards</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="container-fluid  pt-3 mb-2">
+        <div class="row">
+            <div class="col-md-4 f  px-5">
+                <h2 class="font-weight-bold">Sell with Amazon</h2>
+            </div>
+            <div class="col-md-8 ">
+                <div class="row">
+                    <div class="col-md-8 ">
+                        <p class="pt-2"><i class="fa fa-star" aria-hidden="true"></i> Get <B>10% back</B> on your
+                            first <B>$50,000</B> in branded sales.<a href="#" class="text-dark"><B>Learn more</B>
+                            </a></p>
+                    </div>
+                    <div class="col-md-4  pt-1">
+                        <button class="btn  my-2 my-sm-0 b hover-ripple px-4   text-dark"
+                            style="font-weight:bold; background-color: #f39418;  border-radius: 20px;"
+                            type="submit">SIGN
+                            UP</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12 bg-image text-dark  ">
+                    <div class="col-md-6 justify-content-between align-items-center pt-5 px-5">
+                        <h1 style="font-weight: bold; font-size:80px;">Start Selling With Amazon
+                        </h1>
+                        <p class="mb-3">The fastest-growing and preferred acquisition channel for over half our
+                            multichannel sellers.1</p>
+                        <button class="btn  my-2 my-sm-0 b hover-ripple px-4   text-dark"
+                            style="font-weight:bold; background-color: #f39418; border-radius: 40px;width:150px ; height: 60px; font-size: large;"
+                            type="submit">SIGN
+                            UP</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="section mt-5  ">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-4 bg-con pt-5">
+                    <img class="img-fluid" style="border-radius: 30px; height: 50%; "
+                        src="images/magnet-me-63XrEEiOko8-unsplash (1).jpg" alt="About Image">
+                </div>
+                <div class="col-md-7">
+                    <a class=" btn btn-outline-success  my-sm-0  b hover-ripple px-3 text-white"
+                        style="font-weight:bold ; border-radius:30px ; background-color: rgb(20, 100, 20);" href="#"><i
+                            class="fa fa-star" aria-hidden="true"></i> New Seller Incentives</a>
+                    <h1 class="pt-4" style="font-weight: bold; font-size:50px;">Get started with $50,000 in
+                        incentives
+                    </h1>
+                    <p class="mb-4 pt-4 ">Ready to sell with Amazon? As a new seller, you can take advantage of a
+                        series of incentives.<br><br>
+                    <p class="mb-4 pt-2 px-3" style="background-color:beige;"><i class="fa fa-check"
+                            aria-hidden="true"></i> 10% back on your first $50,000 in branded sales, then 5% back
+                        through your first year until you reach $1,000,000<br>
+                        <i class="fa fa-check" aria-hidden="true"></i> $100 off shipments into the Amazon
+                        fulfillment network using the Amazon Partnered Carrier program<br>
+                        <i class="fa fa-check" aria-hidden="true"></i> Free storage and customer returns with
+                        auto-enrollment in the FBA New Selection program<br>
+                        <i class="fa fa-check" aria-hidden="true"></i> $50 credit to create Sponsored Products or
+                        Sponsored Brands ads<br>
+                    </p>
+                    </p>
+                    <a class=" btn   my-sm-0   px-3 text-dark" style="font-weight:bold ; border-radius:30px ;"
+                        href="#">See All Incentives <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-4">
+                    <iframe width="100%" height="370" style="border-radius: 30px;"
+                        src="images/First To The Gate - Magical Short Film w- Zach King.mp4" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 pt-4">
+                    <img style="border-radius: 30px;" src="images/website-design-preview-779137.jpg"
+                        class="h-100 img-fluid " alt="Your Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container pt-3">
+        <div class="row text-dark">
+            <div clas="col-md-4">
+                <a href="#">
+                    <h3 class="font-weight-bold text-dark px-5 "> Your Brand+Amazon</h3>
+                </a>
+            </div>
+            <div class="col-md-8">
+                <button type="button" class="  btn btn-white font-weight-bold"onclick=location.href='#target-section'> Your Buisness at Scale</button>
+                <button type="button" class=" btn btn-white font-weight-bold" onclick=location.href='#target-section1'> Your Brand </button>
+                <button type="button" class=" btn btn-white font-weight-bold" > Your Success Supported</button>
+                <button type="button" class=" btn btn-white font-weight-bold" onclick=location.href='#target-section3'> Case Studies</button>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-4 " style="background-color:rgb(207, 219, 215); border-radius:30px;">
+        <section  id="target-section" class="pt-5 ">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-7 justify-content-between align-items-center pt-2 px-5 ">
+                        <div class="section-title-border"></div>
+                        <h3 style="font-weight: bold; font-size:50px;">Your business at scale
+                        </h3>
+                        <p class="mb-3">Amazon customers buy roughly 7,400 products per minute from U.S. sellers. Build,
+                            grow, and scale your brand with our innovative toolkit: world-class logistics, a proven
+                            customer experience, rich data insights, and cutting-edge advertising & marketing solutions.
+                            This is your path toward profitability.</p>
+
+                        <button class="btn  my-2 my-sm-0 b hover-ripple px-3   text-white"
+                            style="font-weight:bold; background-color: black; border-radius: 40px;width:150px ; height: 40px;"
+                            type="submit">Explore Pricing</button>
+                        <button class="  my-2 my-sm-0 b hover-ripple px-3 bg-white   text-dark"
+                            style="font-weight:bold;  border-radius: 40px;width:150px ; height: 40px;"
+                            type="submit">Watch
+                            Video</button>
+                        <div class="pt-5  px-5 justify-content-center">
+                            <h5>New Republic logo</h5>
+                            <p class="pt-3">“When we launched on Amazon, I had expectations that Amazon would be about
+                                10% to 20% of our total business. Within the first six months, it was 50%. It just
+                                exploded. And it really changed the way I thought about the future of our business.”</p>
+                            <div class="row pt-4">
+                                <img style="border-radius: 100%; width:60px ; height:50px;"
+                                    src="images/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg">
+                                <p class="px-3"><b>Dee Murthy</b> <br>Co-Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 pt-4">
+                        <iframe width="100%" height="370" style="border-radius: 30px;"
+                            src="images/First To The Gate - Magical Short Film w- Zach King.mp4" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-5">
+            <div class="col-md-12 bg-img1 text-white">
+                <div class=" pt-4 stext-white justify-content-between align-items-center">
+                    <h3 style="font-weight: bold; padding-left: 30%;">On average, sellers see a 20–25%<br>
+                        increase in sales after adopting FBA.
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="container pb-3 pt-5 ">
+            <div class="row ">
+                <div class="col-md-4">
+                    <div class="bg-white">
+                        <div class="card-body">
+                            <div class="icon">
+                                <i class="fas fa-cog"></i>
+                                <h5 class="card-title">Outsource your logistics</h5>
+                                <p class="  card-text">With Fulfillment by Amazon (FBA), you store products in our
+                                    fulfillment
+                                    centers, and we pick, pack, ship, returns and customer service. New sellers can also
+                                    enjoy credits for shipments into as part of New Seller
+                                    service.
+                                </p>
+                                <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white">
+                        <div class="card-body">
+                            <div class="icon">
+                                <i class="fas fa-cog"></i>
+                                <h5 class="card-title">Advertise with Amazon</h5>
+                                <p class="card-text">Get discovered, increase sales, and control costs with Amazon Ads.
+                                    Use
+                                    cost-per-click (CPC) campaigns to showcase your products and brand, or try formats
+                                    like
+                                    video, audio, and devices ads. You control your bids
+                                    .</p>
+                                <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                        aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-body bg-white">
+                        <div class="icon ">
+                            <i class="fas fa-cog"></i>
+                            <h5 class="card-title">Sell more with the New Seller Guide</h5>
+                            <div class="description"></div>
+                            <p class="card-text">The New Seller Guide is a set of brand, logistics, pricing, and
+                                promotional services that we recommend to sellers who are just getting started with
+                                Amazon. </p>
+                            <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </section>
+    <section class="container pt-4  pb-5" style="background-color:rgb(199, 245, 230); border-radius:30px;">
+        <section  id="target-section1" class="pt-5 ">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-7 justify-content-between align-items-center pt-2 px-5 ">
+                        <div class="section-title-border"></div>
+                        <h3 style="font-weight: bold; font-size:50px;">Your business at scale
+                        </h3>
+                        <p class="mb-3">Amazon customers buy roughly 7,400 products per minute from U.S. sellers. Build,
+                            grow, and scale your brand with our innovative toolkit: world-class logistics, a proven
+                            customer experience, rich data insights, and cutting-edge advertising & marketing solutions.
+                            This is your path toward profitability.</p>
+
+                        <button class="btn  my-2 my-sm-0 b hover-ripple px-3   text-white"
+                            style="font-weight:bold; background-color: black; border-radius: 40px;width:150px ; height: 40px;"
+                            type="submit">Explore Pricing</button>
+                        <button class="  my-2 my-sm-0 b hover-ripple px-3 bg-white   text-dark"
+                            style="font-weight:bold;  border-radius: 40px;width:150px ; height: 40px;"
+                            type="submit">Watch
+                            Video</button>
+                        <div class="pt-5  px-5 justify-content-center">
+                            <h5>New Republic logo</h5>
+                            <p class="pt-3">“When we launched on Amazon, I had expectations that Amazon would be about
+                                10% to 20% of our total business. Within the first six months, it was 50%. It just
+                                exploded. And it really changed the way I thought about the future of our business.”</p>
+                            <div class="row pt-4">
+                                <img style="border-radius: 100%; width:60px ; height:50px;"
+                                    src="images/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg">
+                                <p class="px-3"><b>Dee Murthy</b> <br>Co-Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 pt-4">
+                        <iframe width="100%" height="370" style="border-radius: 30px;"
+                            src="images/First To The Gate - Magical Short Film w- Zach King.mp4" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-5">
+            <div class="col-md-12 bg-img1 text-white">
+                <div class=" pt-4 stext-white justify-content-between align-items-center">
+                    <h3 style="font-weight: bold; padding-left: 30%;">On average, sellers see a 20–25%<br>
+                        increase in sales after adopting FBA.
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-4 pb-3 ">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bg-white">
+                        <div class="card-body">
+                            <div class="icon">
+                                <i class="fas fa-cog"></i>
+                                <h5 class="card-title">Outsource your logistics</h5>
+                                <p class="  card-text">With Fulfillment by Amazon (FBA), you store products in our
+                                    fulfillment
+                                    centers, and we pick, pack, ship, returns and customer service. New sellers can also
+                                    enjoy credits for shipments into our fulfillment network as part of New Seller
+                                    Incentives and we pick, pack and we pick, pack and we pick, pack returns and
+                                    customer service
+                                </p>
+                                <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white">
+                        <div class="card-body">
+                            <div class="icon">
+                                <i class="fas fa-cog"></i>
+                                <h5 class="card-title">Advertise with Amazon</h5>
+                                <p class="card-text">Get discovered, increase sales, and control costs with Amazon Ads.
+                                    Use
+                                    cost-per-click (CPC) campaigns to showcase your products and brand, or try formats
+                                    like
+                                    video, audio, and devices ads. You control your bids and budget, which means you
+                                    never
+                                    have to overspend and we pick, pack and we pick, pack and we pick, pack,.</p>
+                                <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                        aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white">
+                        <div class="card-body">
+                            <div class="icon">
+                                <i class="fas fa-cog"></i>
+                                <h5 class="card-title">Sell more with the New Seller Guide</h5>
+                                <div class="description"></div>
+                                <p class="card-text">The New Seller Guide is a set of brand, logistics, pricing, and
+                                    promotional services that we recommend to sellers who are just getting started with
+                                    Amazon. Sellers who adopt these services can take advantage of over $50,000 in New
+                                    Seller Incentives incentives.</p>
+                                <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <section  id="target-section3" class=" container pt-4 pb-5">
+        <div>
+            <h1 class="font-weight-bold" style="justify-content: center; align-items: center; display: flex;"> Brand
+                case studies </h1>
+        </div>
+        <div  class="container pt-5 pb-5 ">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card">
+                            <img class="card-img-top" src="images/andrew-neel-Z_pg_rltaKE-unsplash.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p>Case studies</p>
+                                <h5 class="card-title font-weight-bold">Freshly Picked</h5>
+                                <p class="card-text" style="font-size: 14px;">The New Seller Guide is a set of brand,
+                                    logistics, pricing, and
+                                    promotional services that we recommend to sellers who are just getting started with
+                                    Amazon.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card">
+                            <img class="card-img-top" src="images/spacejoy-YI2YkyaREHk-unsplash.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p>Case studies</p>
+                                <h5 class="card-title font-weight-bold">Hope and Henry</h5>
+                                <p class="card-text" style="font-size: 14px;">The New Seller Guide is a set of brand,
+                                    logistics, pricing, and
+                                    promotional services that we recommend to sellers who are just getting started with
+                                    Amazon.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card">
+                            <img class="card-img-top" src="images/nordwood-themes-q8U1YgBaRQk-unsplash.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p>Case studies</p>
+                                <h5 class="card-title font-weight-bold">New Republic</h5>
+                                <p class="card-text " style="font-size: 14px;">The New Seller Guide is a set of brand,
+                                    logistics, pricing, and
+                                    promotional services that we recommend to sellers who are just getting started with
+                                    Amazon.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="container pb-5">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12 bg-image2 text-dark  ">
+                    <div class="col-md-7 justify-content-between align-items-center pt-5 px-5 ">
+                        <p>PROGRAM</p>
+                        <h3 style="font-weight: bold; font-size:50px;">Unlock a universe of selling opportunities
+                        </h3>
+                        <p class="mb-3">What type of Amazon seller are you? Play to your strengths and create your
+                            selling strategy with a variety of programs made to support your unique business.</p>
+
+                        <button class="btn  my-2 my-sm-0 b hover-ripple px-3   text-white"
+                            style="font-weight:bold; background-color: black; border-radius: 40px;width:150px ; height: 40px;"
+                            type="submit">Explore Pricing</button>
+                        <button class="  my-2 my-sm-0 b hover-ripple px-3 bg-white   text-dark"
+                            style="font-weight:bold;  border-radius: 40px;width:150px ; height: 40px;"
+                            type="submit">Watch
+                            Video</button>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <section class="container-fluid pt-5" style="background-color: rgb(228, 247, 247); border-radius: 20px;">
+        <section  class="container px-5">
+            <div>
+                <h1 class="font-weight-bold pb-4" style="justify-content: center;align-items: center; display: flex;">
+                    Learn
+                    more about selling with Amazon</h1>
+            </div>
+            <div class=" bg-white row px-5 pt-5 pb-5">
+                <div class="col-md-6">
+                    <ul class="list-unstyled link-list text-dark">
+                        <li><a href="#">The Beginners Guide To selling On Amazon <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a></li><br>
+                        <li><a href="#">Sell Online:How to get Started <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i> </a></li><br>
+                        <li><a href="#">Grow your Amazon Buisness With Amazon <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a></li><br>
+                        <li><a href="#">Build an Online Store Featuring Your Brand <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a></li><br>
+                        <li><a href="#">Grow your Amazon Buisness With Amazon <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a></li><br>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled link-list text-dark">
+                        <li><a href="#">The Beginners Guide To selling On Amazon <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a></li><br>
+                        <li><a href="#">Sell Online:How to get Started <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i> </a></li><br>
+                        <li><a href="#">Grow your Amazon Buisness With Amazon <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a></li><br>
+                        <li><a href="#">Build an Online Store Featuring Your Brand <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a></li><br>
+                        <li><a href="#">Grow your Amazon Buisness With Amazon <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a></li><br>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="container pt-5">
+            <h1 class="font-weight-bold"
+                style="display: flex;align-items: center;justify-content: center;font-size: 60px;">Introduction to
+                ecommerce selling</h1>
+            <div class="container pb-3 pt-5 ">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <div class="bg-white">
+                            <div class="card-body">
+                                <div class="icon">
+                                    <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+                                    <h5 class="card-title font-weight-bold pt-2">Outsource your logistics</h5>
+                                    <p class="  card-text">With Fulfillment by Amazon (FBA), you store products in our
+                                        fulfillment
+                                        centers, and we pick, pack, ship, returns and customer service. New sellers can
+                                        also
+                                        enjoy credits for shipments into as part of New Seller
+                                        service.
+                                    </p>
+                                    <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-white">
+                            <div class="card-body">
+                                <div class="icon">
+                                    <i class="fa fa-truck fa-3x" aria-hidden="true"></i>
+                                    <h5 class="card-title font-weight-bold pt-2">Advertise with Amazon</h5>
+                                    <p class="card-text">Get discovered, increase sales, and control costs with Amazon
+                                        Ads.
+                                        Use
+                                        cost-per-click (CPC) campaigns to showcase your products and brand, or try
+                                        formats
+                                        like
+                                        video, audio, and devices ads. You control your bids
+                                        .</p>
+                                    <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                            aria-hidden="true"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body bg-white">
+                            <div class="icon ">
+                                <i class="fa fa-camera-retro fa-3x"></i>
+                                <h5 class="card-title font-weight-bold pt-2">Sell more with the New Seller </h5>
+                                <div class="description"></div>
+                                <p class="card-text">The New Seller Guide is a set of brand, logistics, pricing, and
+                                    promotional services that we recommend to sellers who are just getting started with
+                                    Amazon services that wen recommended oftenly hence this is good. </p>
+                                <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-3 pt-5 ">
+            <div class="row ">
+                <div class="col-md-4">
+                    <div class="bg-white">
+                        <div class="card-body">
+                            <div class="icon">
+                                <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+                                <h5 class="card-title font-weight-bold pt-2">Outsource your logistics</h5>
+                                <p class="  card-text">With Fulfillment by Amazon (FBA), you store products in our
+                                    fulfillment
+                                    centers, and we pick, pack, ship, returns and customer service. New sellers can
+                                    also
+                                    enjoy credits for shipments into as part of New Seller
+                                    service.
+                                </p>
+                                <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white">
+                        <div class="card-body">
+                            <div class="icon">
+                                <i class="fa fa-truck fa-3x" aria-hidden="true"></i>
+                                <h5 class="card-title font-weight-bold pt-2">Advertise with Amazon</h5>
+                                <p class="card-text">Get discovered, increase sales, and control costs with Amazon
+                                    Ads.
+                                    Use
+                                    cost-per-click (CPC) campaigns to showcase your products and brand, or try
+                                    formats
+                                    like
+                                    video, audio, and devices ads. You control your bids
+                                    .</p>
+                                <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                        aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-body bg-white">
+                        <div class="icon ">
+                            <i class="fa fa-camera-retro fa-3x"></i>
+                            <h5 class="card-title font-weight-bold pt-2">Sell more with the New Seller </h5>
+                            <div class="description"></div>
+                            <p class="card-text">The New Seller Guide is a set of brand, logistics, pricing, and
+                                promotional services that we recommend to sellers who are just getting started with
+                                Amazon services that wen recommended oftenly hence this is good. </p>
+                            <a href="#" class="btn ">Learn More <i class="fa fa-external-link-square"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="container pt-5 ">
+            <p style="display: flex;justify-content: center;">Just have a few items to sell?<a
+                    class="font-weight-bold text-dark" href="#"> Sign up to become an individual seller <i
+                        class="fa fa-external-link-square" aria-hidden="true"></i></a>
+            </p>
+        </div>
+        <div class="container pt-5 pb-5">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-md-12 bg-image3 text-dark  ">
+                        <div class="col-md-7 justify-content-between align-items-center pt-5 px-5 ">
+                            <p>PROGRAM</p>
+                            <h3 style="font-weight: bold; font-size:60px;">Start selling today
+                            </h3>
+                            <p class="mb-3 pt-3" style=" font-size:19px">Put your products in front of the millions of
+                                customers who search Amazon.com every day..</p>
+                            <div class="pt-4">
+                                <button class="btn  my-2 my-sm-0 b hover-ripple px-4  text-dark"
+                                    style="font-weight:bold; background-color: #f39418; border-radius: 40px;width:150px ; height: 60px; font-size: large;"
+                                    type="submit">SIGN
+                                    UP</button>
+                                <p class="pt-2">$39.99 a month + selling fees</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="pb-5" style="display: flex;justify-content: center;font-size: 12px;">1 Amazon internal data,
+                FY2021 survey of
+                21.2K U.S. multichannel sellers</p>
+        </div>
+    </section>
+    <footer >
+        <button id="backToTop" style="width: 100%; background-color: black;" class=" py-2 text-white ">Back to
+            Top</button>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script>
+            $('#backToTop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+
+        </script>
+        <div class="  bg-dark text-white" style="font-size: 13px;">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5>Get to Know Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">About Us</a></li>
+                            <li><a href="#" class="text-white">Careers</a></li>
+                            <li><a href="#" class="text-white">Press Releases</a></li>
+                            <li><a href="#" class="text-white">Amazon Cares</a></li>
+                            <li><a href="#" class="text-white">Careers</a></li>
+                            <li><a href="#" class="text-white">Press Releases</a></li>
+                            <li><a href="#" class="text-white">Amazon Cares</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5>Connect with Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Facebook</a></li>
+                            <li><a href="#" class="text-white">Twitter</a></li>
+                            <li><a href="#" class="text-white">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5>Make Money with Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Sell on Amazon</a></li>
+                            <li><a href="#" class="text-white">Sell Under Amazon Accelerator</a></li>
+                            <li><a href="#" class="text-white">Become an Affiliate</a></li>
+                            <li><a href="#" class="text-white">Advertise Your Products</a></li>
+                            <li><a href="#" class="text-white">Advertise Your Products</a></li>
+                            <li><a href="#" class="text-white">Sell on Amazon</a></li>
+                            <li><a href="#" class="text-white">Sell Under Amazon Accelerator</a></li>
+                            <li><a href="#" class="text-white">Become an Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5>Let Us Help You</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">COVID-19 and Amazon</a></li>
+                            <li><a href="#" class="text-white">Your Account</a></li>
+                            <li><a href="#" class="text-white">Returns Centre</a></li>
+                            <li><a href="#" class="text-white">100% Purchase Protection</a></li>
+                            <li><a href="#" class="text-white">Your Account</a></li>
+                            <li><a href="#" class="text-white">Returns Centre</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-light">English</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-light">USD - U.S. Dollar</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-light">United States</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container py-4 footer-links">
+                <div class="row d-none d-sm-block">
+                    <div class="col-12 text-center">
+                        <a href="#">Amazon Music</a>
+                        <a href="#">Amazon Advertising</a>
+                        <a href="#">Amazon Drive</a>
+                        <a href="#">6pm</a>
+                        <a href="#">AbeBooks</a>
+                        <a href="#">ACX</a>
+                        <a href="#">Alexa</a>
+                        <a href="#">Sell on Amazon</a>
+                        <a href="#">Sell Under Amazon Accelerator</a>
+                        <a href="#">Become an Affiliate</a>
+                        <a href="#">Advertise Your Products</a>
+                        <a href="#">Amazon Web Services</a>
+                        <a href="#">Audible</a>
+                        <a href="#">Book Depository</a>
+                        <a href="#">Box Office Mojo</a>
+                        <a href="#">ComiXology</a>
+                        <a href="#">DPReview</a>
+                        <a href="#">Fabric</a>
+                        <a href="#">Goodreads</a>
+                        <a href="#">IMDb</a>
+                        <a href="#">IMDbPro</a>
+                        <a href="#">Kindle Direct Publishing</a>
+                        <a href="#">Prime Video Direct</a>
+                        <a href="#">Shopbop</a>
+                        <a href="#">Woot!</a>
+                        <a href="#">Zappos</a>
+                        <a href="#">Ring</a>
+                        <a href="#">eero WiFi</a>
+                        <a href="#">Blink</a>
+                        <a href="#">Neighbors App</a>
+                        <a href="#">Amazon Subscription Boxes</a>
+                        <a href="#">PillPack</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark text-center py-3">
+                <p class="mb-0">© 2024 Your Company. All Rights Reserved.</p>
+            </div>
+            <div></div>
+        </footer>
+</body>
+
+</html>
